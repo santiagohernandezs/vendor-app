@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/space-in-jsx-curly-braces": "off",
+    "quotes": ["error", "single"],
+    "comma-dangle": ["error", "never"],
+    "next/next/no-head-element": "on" // This is the rule is for avoid <Head/> error
+  }
 }
